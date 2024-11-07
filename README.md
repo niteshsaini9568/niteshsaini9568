@@ -29,7 +29,7 @@
 - 🌱 **Learning**: Advanced Data Structures and Algorithms
 - 💬 **Ask me about**: MERN Stack, Machine Learning, Full-Stack Development
 - 📫 **Email**: [22cs2015@rgipt.ac.in](mailto:22cs2015@rgipt.ac.in)
-- 👨‍💻 **Portfolio**: [My Portfolio](https://niteshsaini9568.github.io/My-Portfolio/)
+- 👨‍💻 **Portfolio**: [My Portfolio](https://my-portfolio-qpv9.onrender.com/)
 - 📄 **Resume**: [View Resume](https://github.com/niteshsaini9568/My-resume.git)
 
 ---
