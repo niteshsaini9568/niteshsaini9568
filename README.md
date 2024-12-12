@@ -25,7 +25,7 @@
 ---
 
 ## 🚀 About Me
-- 🔭 **Current Project**: [Dark Patterns Detector](https://github.com/niteshsaini9568/Dark-Patterns-detector.git)
+- 🔭 **Current Project**: [Techmate-A freelancing project](https://github.com/niteshsaini9568/Dark-Patterns-detector.git)
 - 🌱 **Learning**: Advanced Data Structures and Algorithms
 - 💬 **Ask me about**: MERN Stack, Machine Learning, Full-Stack Development
 - 📫 **Email**: [22cs2015@rgipt.ac.in](mailto:22cs2015@rgipt.ac.in)
