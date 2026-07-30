@@ -14,8 +14,8 @@
 <h1 align="center">Nitesh Saini</h1>
 
 <p align="center">
-  <b>Backend & Distributed Systems Engineer</b><br/>
-  <sub>Building things that scale — microservices, AI automation pipelines, and full-stack platforms that run in production</sub>
+  <b>AI & Backend Engineer</b><br/>
+  <sub>Building things that scale — LLM pipelines, distributed microservices, and automation that runs in production</sub>
 </p>
 
 <p align="center">
@@ -42,17 +42,17 @@
 
 ## `whoami`
 
-Final-year Integrated M.Tech student in CS & AI at **RGIPT** (Institution of National Importance), shipping real backend systems since my second year. I gravitate toward the hard parts — distributed architecture, job queues, caching layers, and making things actually reliable at scale.
+Integrated M.Tech student in CS & AI at **RGIPT** (Institution of National Importance), 4th year, graduating May 2027 — shipping real backend systems since my second year. I gravitate toward the hard parts: distributed architecture, job queues, caching layers, retrieval pipelines, and making things actually reliable at scale.
 
-Currently incoming **Member of Technical Staff** at **GeeksforGeeks** (starting June 2025), where I'll be working on HLD/LLD for the National Skill Program platform.
+Currently **AI Engineer** at **MantriAI** (Bangalore), building the AI layer of a hiring platform — and previously **Member of Technical Staff** at **GeeksforGeeks**, working on systems design for the Code Editor infrastructure.
 
 Right now I'm deep in:
 
-- **CampusHire** — a college placement portal for RGIPT with role-based access, microservices backend in Node.js + PostgreSQL + Redis, Docker/Kubernetes deployment, off-campus job scraping agents via n8n, and an admin analytics panel backed by AWS S3/EC2
-- **MailSentinel** — an AI-powered Gmail automation system with BullMQ job queues, Groq LLaMA classification, a 4-layer rate-limiting strategy, and a Next.js dashboard
-- **n8n automation pipelines** — smart job extractors, CV parsing agents, multi-channel delivery (Gmail + Telegram)
+- **PreCall @ MantriAI** — an AI hiring pipeline: Express/MongoDB services that embed CVs and JDs, vector-score a top-K shortlist, then LLM-screen it into match scores, gaps and bucketed interview questions. Plus a FastAPI engine that turns a JD + discovery-call transcript into 10 grounded follow-up questions
+- **Recruiter automation** — Playwright profile extractors (LinkedIn, GitHub, Hirist/IIMjobs) and idempotent Zoho Recruit sync that pushes screening notes and attaches resumes across candidate records
+- **CampusHire** — a college placement portal with role-based access, a Go/Node microservices backend on PostgreSQL + Redis, Docker/Kubernetes deployment, off-campus job scraping agents via n8n, and an admin analytics panel on AWS S3/EC2
 
-I write TypeScript and Node.js day-to-day. I know my way around Golang, PostgreSQL, Redis, Docker, and anything AWS. When I'm not writing backend code I'm doing competitive programming — 400+ problems across LeetCode and GFG.
+I write TypeScript, Node.js and Python day-to-day. I know my way around Golang, PostgreSQL, Redis, Docker, LLM APIs, and anything AWS. When I'm not writing backend code I'm doing competitive programming — 400+ problems across LeetCode and GFG.
 
 ---
 
@@ -60,32 +60,57 @@ I write TypeScript and Node.js day-to-day. I know my way around Golang, PostgreS
 
 | Role | Company | Period | What I did |
 |------|---------|--------|------------|
-| **Member of Technical Staff** *(incoming)* | GeeksforGeeks | Jun 2025 – Nov 2025 | HLD/LLD for National Skill Program platform; full-stack feature ownership from design to deployment; led code reviews aligned with clean code principles |
-| **Web Developer & Technical Mentor** | Apna College | Jul 2024 – Dec 2024 | Debugged 550+ complex MERN issues; mentored 5,000+ students on system design and backend fundamentals; 4.94/5 satisfaction rating |
+| **AI Engineer** | MantriAI | May 2026 – Present | Built the PreCall hiring pipeline — CV/JD embeddings, vector top-K shortlisting, LLM screening and interview-question generation; shipped a FastAPI grounded-question engine over scraped company review intel; automated recruiter ops with profile extractors and Zoho Recruit sync |
+| **Member of Technical Staff** | GeeksforGeeks | Jun 2025 – Nov 2025 | Engineered scalable distributed systems using SOA, Nginx caching and RESTful APIs sustaining high-concurrency production traffic; led code reviews and authored system designs across the Code Editor infrastructure |
+| **Web Developer & Technical Mentor** | Apna College | Jul 2024 – Dec 2024 | Resolved 550+ complex technical issues through systematic debugging and unit testing; mentored 5,000+ students on engineering fundamentals — 4.94/5 satisfaction rating |
 | **Full Stack Developer Intern** | Navrasa Group | Aug 2024 – Sep 2024 | Shipped production-ready modular features; cut deployment cycles by 15% via optimized CI/CD and version control workflows |
 
 ---
 
 ## Projects
 
-### [CampusHire](https://github.com/niteshsaini9568) — College Placement & Job Portal `[Ongoing]`
-> Next.js · Node.js · PostgreSQL · Redis · Docker · Kubernetes · n8n · AWS EC2/S3
+### [CampusHire](https://campushire-student-frontend.onrender.com) — College Placement & Job Portal `[Ongoing]`
+> Next.js · Golang · Node.js · PostgreSQL · Redis · Docker · Kubernetes · n8n · AWS EC2/S3
 
-Full-stack placement portal built for RGIPT. Role-based access (students, TPOs, admins), off-campus job aggregation via autonomous scraping agents, alumni networking, and real-time admin analytics. Distributed microservices backend with Redis caching, JWT auth with OTP verification, and Kubernetes orchestration. Designed from scratch — architecture, database schema, infra, deployment.
+Full-stack placement portal built for RGIPT. Role-based access (students, TPOs, admins), off-campus job aggregation from LinkedIn/Indeed/Naukri via autonomous scraping agents, alumni networking, and real-time admin analytics. Distributed microservices backend with Redis caching, JWT auth with OTP verification, and Kubernetes orchestration. Designed from scratch — architecture, database schema, infra, deployment.
+
+**[Live →](https://campushire-student-frontend.onrender.com)**
 
 ---
 
-### [MailSentinel](https://github.com/niteshsaini9568) — AI Email Automation System `[Mar 2025]`
-> Node.js · Next.js · TypeScript · BullMQ · Redis · Groq API · Gmail API · OAuth2
+### [Mail Sentinel](https://mail-sentinel.vercel.app/) — AI Email Automation System `[Mar 2025]`
+> Node.js · Next.js · TypeScript · BullMQ · Redis · Groq API · Gmail API · OAuth2 · Docker
 
 End-to-end Gmail automation: BullMQ workers poll inboxes, Groq LLaMA-3.3-70b classifies emails, applies labels, and drafts auto-replies within seconds. Built a 4-layer rate-limiting system (inbox snapshots, per-cycle caps, job staggering, concurrency control) to stay under API quotas. OAuth2 tokens scoped to minimum permissions, stored in Redis, never exposed client-side.
 
+**[Live →](https://mail-sentinel.vercel.app/)**
+
 ---
 
-### [AIChE Student Platform](https://github.com/niteshsaini9568) `[Jul 2024]`
-> React · Node.js · MongoDB · AWS EC2 · Payment Integration
+### [Plant Disease Detection](https://github.com/niteshsaini9568/SAS-International-Hackathon) `[Oct – Nov 2024]`
+> TensorFlow · Keras · CNN · Gemini API · Streamlit
 
-Cloud-native platform serving 2,000+ concurrent users at 99.9% uptime. 40% faster page loads through load balancing, database tuning, and caching. Owned the full deployment lifecycle from system design to production monitoring.
+Real-time plant disease detection across 38+ diseases at 92% accuracy, trained on the PlantVillage dataset. Paired the CNN with a Gemini-powered chatbot for personalized, multilingual treatment guidance — farmers upload a leaf image and get an instant diagnosis.
+
+**[Live →](https://sas-international-hackathon.streamlit.app/)** · **[Code →](https://github.com/niteshsaini9568/SAS-International-Hackathon)**
+
+---
+
+### [Techmate Marketplace](https://github.com/niteshsaini9568/Techmate-Frontend) `[Nov – Dec 2024]`
+> React · Node.js · MongoDB · Express · Docker · Razorpay
+
+Scalable MERN marketplace for graphic design services and electronics, with JWT auth, Razorpay payments, Docker deployment and a CI/CD pipeline.
+
+**[Live →](https://techmate-frontend-alpha.vercel.app/)** · **[Code →](https://github.com/niteshsaini9568/Techmate-Frontend)**
+
+---
+
+### [AIChE Student Platform](https://www.aichergipt.com/) `[Jun – Jul 2024]`
+> React · Node.js · MongoDB · AWS EC2 · Razorpay · SEO
+
+High-performance platform on AWS EC2 serving 2,000+ active users. SEO work drove 25% organic traffic growth and a 20% CTR lift. Owned the full deployment lifecycle from system design to production monitoring.
+
+**[Live →](https://www.aichergipt.com/)**
 
 ---
 
@@ -97,6 +122,19 @@ Cloud-native platform serving 2,000+ concurrent users at 99.9% uptime. 40% faste
   <img src="https://skillicons.dev/icons?i=ts,js,py,cpp,bash,go&theme=dark" />
 </p>
 
+**AI & LLM**
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Claude-D97757?style=flat&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/Gemini-8E75F5?style=flat&logo=googlegemini&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white" />
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kimi_K2-4D6BFE?style=flat" />
+  <img src="https://img.shields.io/badge/Groq-F55036?style=flat" />
+  <img src="https://img.shields.io/badge/Vector_Search-4169E1?style=flat" />
+  <img src="https://img.shields.io/badge/RAG_Pipelines-6E40C9?style=flat" />
+</p>
+
 **Frontend**
 
 <p align="left">
@@ -106,7 +144,7 @@ Cloud-native platform serving 2,000+ concurrent users at 99.9% uptime. 40% faste
 **Backend & Databases**
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,redis&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,postgres,mongodb,redis&theme=dark" />
 </p>
 
 **Infrastructure & DevOps**
@@ -115,10 +153,15 @@ Cloud-native platform serving 2,000+ concurrent users at 99.9% uptime. 40% faste
   <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,nginx,githubactions,linux&theme=dark" />
 </p>
 
-**Tools**
+**Automation & Tooling**
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,vercel,figma&theme=dark" />
+  <br/>
+  <img src="https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white" />
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/BullMQ-DC382D?style=flat&logo=redis&logoColor=white" />
 </p>
 
 ---
@@ -126,9 +169,11 @@ Cloud-native platform serving 2,000+ concurrent users at 99.9% uptime. 40% faste
 ## Achievements
 
 - **Top 5%** — Dark Patterns Buster Hackathon, IIT-BHU (1,800+ teams)
-- **Top 5** — Level Supermind AI Hackathon
-- **Finalist (Top 100 globally)** — SAS Global Hackathon
-- **Teaching Assistant** — selected to mentor juniors in DSA and System Design
+- **Top 5** — Level Supermind AI Hackathon, Mumbai
+- **Runner Up** — SAS International Hackathon (plant disease detection, 38+ diseases)
+- **4th of 20** — IEEE Code Current competitive programming contest
+- **Speaker** — GeeksforGeeks development workshops, Bangalore HQ (200+ attendees)
+- **DSA Tutor** — handpicked to mentor junior students in Data Structures & Algorithms
 - **400+ problems** solved across LeetCode and GeeksforGeeks
 
 ---
